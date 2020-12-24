@@ -3,11 +3,12 @@ import java.util.Scanner;
 
 public class Main {
 	
+	static User user=new User();
+	static Player player=new Player();
+	static Squad squad=new Squad();
 	public static void main(String args[]) throws IOException
 	{
-		User user=new User();
-		Player player=new Player();
-		Squad squad=new Squad();
+		
 		boolean choose=true;
 		Scanner scan= new Scanner(System.in);
 		while(choose) 
