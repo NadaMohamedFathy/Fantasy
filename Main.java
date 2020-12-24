@@ -5,7 +5,9 @@ public class Main {
 	
 	public static void main(String args[]) throws IOException
 	{
-		User user;
+		User user=new User();
+		Player player=new Player();
+		Squad squad=new Squad();
 		boolean choose=true;
 		Scanner scan= new Scanner(System.in);
 		while(choose) 
@@ -13,20 +15,30 @@ public class Main {
 			System.out.print("Choose option : " + '\n');
 			System.out.print("(1) Sign in " + '\n');
 			System.out.print("(2) Login " + '\n');
-			System.out.print("(3) Exit " + '\n');
+			System.out.print("(3) Add Player " + '\n');
+			System.out.print("(4) Add Squad " + '\n');
+			System.out.print("(5) Exit " + '\n');
 			String choise= scan.nextLine();
 			switch (choise)
 			{
 				case ("1"):
 				{
-					user=new SignedInUser();
-					user.register();
+					user.SignedInUser();
 					break;
 				}
 				case ("2"):
 				{
-					user=new LogedInUser();
-					user.register();
+					user.LogedInUser();
+					break;
+				}
+				case ("3"):
+				{
+					player.addPlayer();
+					break;
+				}
+				case ("4"):
+				{
+					squad.addSquad();
 					break;
 				}
 				default:
