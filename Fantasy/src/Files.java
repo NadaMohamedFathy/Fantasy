@@ -80,7 +80,7 @@ import java.util.ArrayList;
 		{
 				BufferedWriter out=new BufferedWriter(new FileWriter(path("Users.txt"),true));
 				out.write(userinfo.getName() + "," + userinfo.getEmail() + "," + userinfo.password + "," + userinfo.getFavourite_Premier_League_Team() + "," +
-				(int)userinfo.getBudget());
+				+ userinfo.getFilename() + "," + (int)userinfo.getBudget());
 				out.newLine();
 				out.close();
 		}
