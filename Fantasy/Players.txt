@@ -1,21 +1,54 @@
-Adrian,Spain,Liverpool,Goalkeeper,03/01/1987,190.0 cm,5000000,138,0,56,45,37
-Alisson,Brazil,Liverpool,Goalkeeper,02/10/1992,191 cm,4000000,78,0,61,4,37
-Alphonse Areola,France,Fulham,Goalkeeper,27/02/1993,195 cm,2000000,13,0,2,7,2
-Mohamed Salah,Egypt,Liverpool,Forward,15/06/1992,173.0cm,20000000,134,88,96,13,0
-Tammy Abraham,England,Chelsea,Forward,02/10/1997,190 cm,7000000,79,23,30,31,0
-Che Adams,England,Southampton,Forward,13/07/1996,175 cm,5500000,44,8,20,16,0
-Sadio Mane,Senegal,Liverpool,Forward,10/04/1992,175 cm,11000000,207,89,128,35,0
-Ilkay Gundogan,Germany,Manchester City,Midfielder,24/10/1990,180 cm,6000000,110,16,80,17,0
-Pablo Hernandez,Spain,Leeds United,Midfielder,11/04/1985,173 cm,6000000,62,5,17,28,0
-Rolando Aarons,England,Newcastle United,Midfielder,16/11/1995,178.0 cm,5000000,18,2,3,12,0
-Naby Keita,Guinea,Liverpool,Midfielder,10/02/1995,172 cm,4000000,50,4,40,3,0
-Georginio Wijnaldum,Netherlands,Liverpool,Midfielder,11/11/1990,175 cm,4000000,193,26,118,33,0
-Bukayo Saka,England,Arsenal,Midfielder,05/09/2001,178 cm,8000000,39,2,13,14,0
-Moussa Sissoko,France,Tottenham Hotspur,Midfielder,16/08/1989,187 cm,3000000,246,14,116,84,0
-Kyle Walker,England,Manchester City,Defender,28/05/1990,178 cm,10000000,304,8,187,52,0
-Harry Maguire,England,Manchester United,Defender,05/03/1993,194 cm,7000000,151,9,57,60,0
-Thiago Silva,Brazil,Chelsea,Defender,22/09/1984,183 cm,1000000,9,1,4,2,0
-Marcos Alonso,Spain,Chelsea,Defender,28/12/1990,188 cm,9000000,141,20,87,32,0
-Ahmed Hegazi,Egypt,West Bromwich Albion,Defender,25/01/1991,193 cm,5000000,39,2,6,19,0
-Nathan Ake,Netherlands,Manchester City,Defender,18/02/1995,180 cm,7000000,151,13,53,68,0
-Toby Alderweireld,Belgium,Tottenham Hotspur,Defender,02/03/1989,187 cm,4000000,185,8,103,43,0
+Adrian,Spain,Liverpool,Goalkeeper,03/01/1987,190.0 cm,5000000,48
+Alisson,Brazil,Liverpool,Goalkeeper,02/10/1992,191 cm,4000000,2
+Alphonse Areola,France,Fulham,Goalkeeper,27/02/1993,195 cm,2000000,2
+Ederson,Brazil,Manchester City,Goalkeeper,17/08/1993,188 cm,5000000,0
+Mohamed Salah,Egypt,Liverpool,Forward,15/06/1992,173.0 cm,20000000,32
+Sadio Mane,Senegal,Liverpool,Forward,10/04/1992,175 cm,11000000,0
+Divock Origi,Belgium,Liverpool,Forward,18/04/1995,185 cm,5000000,0
+Sergio Aguero,Argentina,Manchester City,Forward,02/06/1988,173 cm,3000000,0
+Gabriel Jesus,Brazil,Manchester City,Forword,3/4/1997,175 cm,2000000,0
+Che Adams,England,Southampton,Forward,13/07/1996,175 cm,5500000,0
+Ilkay Gundogan,Germany,Manchester City,Midfielder,24/10/1990,180 cm,6000000,0
+kevin de bruyne,Belgium,Manchester City,Midfielder,28/6/1991,181 cm,4000000,0
+Riyad Mahrez,Algeria,Manchester City,Midfielder,21/2/1991,179 cm,3000000,10
+Bernardo Silva,Portugal,Manchester City,Midfielder,10/8/1994,173 cm,300000,0
+Naby Keita,Guinea,Liverpool,Midfielder,10/02/1995,172 cm,4000000,0
+Georginio Wijnaldum,Netherlands,Liverpool,Midfielder,11/11/1990,175 cm,4000000,0
+Fabinho,Brazil,Liverpool,Midfielder,23/10/1993,188 cm,500000,0
+Pablo Hernandez,Spain,Leeds United,Midfielder,11/04/1985,173 cm,6000000,0
+Rolando Aarons,England,Newcastle United,Midfielder,16/11/1995,178.0 cm,5000000,0
+Bukayo Saka,England,Arsenal,Midfielder,05/09/2001,178 cm,8000000,0
+Moussa Sissoko,France,Tottenham Hotspur,Midfielder,16/08/1989,187 cm,3000000,0
+Harry Maguire,England,Manchester United,Defender,05/03/1993,194 cm,7000000,0
+Ahmed Hegazi,Egypt,West Bromwich Albion,Defender,25/01/1991,193 cm,5000000,0
+Toby Alderweireld,Belgium,Tottenham Hotspur,Defender,02/03/1989,187 cm,4000000,0
+Alexander-Arnold,England,Liverpool,Defender,07/10/1998,175 cm,5000000,0
+Robertson,Scotland,Liverpool,Defender,11/03/1994,178 cm,4000000,0
+Virgil van Dijk,Netherlands,Liverpool,Defender,08/07/1991,193 cm,3000000,0
+Neco Williams,Wales,Liverpool,Defender,13/04/2001,188 cm,1000000,0
+Benjamin Mendy,France,Manchester City,Defender,17/07/1994,185 cm,5000000,-1
+Aymeric Laporte,France,Manchester City,Defender,27/05/1994,191 cm,3000000,-1
+Nathan Ake,Netherlands,Manchester City,Defender,18/02/1995,180 cm,7000000,-1
+Kyle Walker,England,Manchester City,Defender,28/05/1990,178 cm,10000000,-1
+Arrizabalaga,Spain,Chelsea,Goalkeeper,03/10/1994,189 cm,4000000,18
+Thiago Silva,Brazil,Chelsea,Defender,22/09/1984,183 cm,1000000,9
+Azpilicueta,Spain,Chelsea,Defender,28/08/1989,178 cm,3000000,0
+Ben Chilwell,England,Chelsea,Defender,21/12/1996,178 cm,4000000,0
+Marcos Alonso,Spain,Chelsea,Defender,28/12/1990,188 cm,9000000,0
+Tammy Abraham,England,Chelsea,Forward,02/10/1997,190 cm,7000000,0
+Timo Werner,Germany,Chelsea,Forward,06/03/1996,180 cm,3000000,0
+Olivier Giroud,France,Chelsea,Forward,30/09/1986,192 cm,2000000,0
+Pulisic,United States,Chelsea,Midfielder,18/09/1998,172 cm,2000000,0
+HakemZiyech,Morocco,Chelsea,Midfielder,19/03/1993,180 cm,3000000,0
+Mason Mount,England,Chelsea,Midfielder,10/01/1999,178 cm,4000000,0
+Nyland,Norway,Aston Villa,Goalkeeper,10/09/1990,192 cm,4000000,0
+Nail Taylor,Wales,Aston Villa,Defender,07/02/1989,176 cm,2000000,0
+Engels,Belgium,Aston Villa,Defender,15/09/1994,193 cm,3000000,0
+Targett,England,Aston Villa,Defender,18/09/1995,183 cm,4000000,0
+Ahmed El Mohamady,Egypt,Aston Villa,Defender,09/09/1987,183cm,3000000,0
+Jack Grealish,England,Aston Villa,Midfielder,10/09/1995,175 cm,3000000,0
+Douglas Luiz,Brazil,Aston Villa,Midfielder,09/05/1998,175 cm,4000000,0
+Trezeguet,Egypt,Aston Villa,Midfielder,01/10/1994,180 cm,3000000,0
+Anwar El Ghazi,Netherlands,Aston Villa,Midfielder,03/05/1995,188 cm,2000000,0
+Davis,England,Aston Villa,Forward,13/02/1998,191 cm,3000000,0
+wesley,Brazil,Aston Villa,Forward,26/11/1996,191 cm,3000000,0

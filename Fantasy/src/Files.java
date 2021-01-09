@@ -2,7 +2,6 @@
 	import java.io.BufferedReader;
 	import java.io.BufferedWriter;
 	import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 	import java.io.FileWriter;
 	import java.io.IOException;
@@ -13,14 +12,10 @@ import java.util.ArrayList;
 		public String directory;
 		public File file;
 		String file_name="";
-		int numberOfPlayers=0;
-		int numberOfGoalkeepers=0;
-		int numberOfForwards=0;
-		int numberOfMidfielders=0;
-		int numberOfDefenders=0;
-		int numberOfPlayersInFile=0;
 		ArrayList<String> array=new ArrayList<String>();
 		ArrayList<String> lines = new ArrayList<String>();
+		ArrayList<String> Team1=new ArrayList<String>();
+		ArrayList<String> Team2=new ArrayList<String>();
 		public Files() 
 		{
 			directory = System.getProperty("user.dir");
@@ -68,19 +63,27 @@ import java.util.ArrayList;
 		public void displayFile(String fileName) throws IOException
 		{
 			readFile(fileName);
-			for(int i=0;i<array.size();i+=12)
+			for(int i=0;i<array.size();i+=8)
 			{
 				System.out.println("Player Name : " + array.get(i) + " , " + "Nationality : " + array.get(i+1) + " , " + "Club : " + array.get(i+2)
 				+ " , " + "Position : " + array.get(i+3) + " , " + "Date of Birth : " + array.get(i+4) + " , " + "Height : " + array.get(i+5)
-				+ " , " + "Price : " + (Integer.parseInt(array.get(i+6))/1000000) + " million , " + "Appearances : " + array.get(i+7) +" , " + "Goals : " + array.get(i+8) +" , " + "Wins : " 
-				+ array.get(i+9) +" , " + "Losses : " + array.get(i+10) +" , " + "CleanSheets : " + array.get(i+11));
+				+ " , " + "Price : " + (Integer.parseInt(array.get(i+6))/1000000) + " million , " + "Points : " + array.get(i+7) );
+				System.out.println("-------------------------------------------------------------------------------------------------" + '\n');
 			}
 		}
 		public void writeFile(UserInfo userinfo) throws IOException
 		{
 				BufferedWriter out=new BufferedWriter(new FileWriter(path("Users.txt"),true));
+<<<<<<< HEAD
+				out.write(userinfo.getName() + "," + userinfo.getEmail() + "," + userinfo.password + "," + userinfo.getFavourite_Premier_League_Team() + "," + userinfo.getFilename() 
+				+ "," +(int)userinfo.getBudget());
+=======
 				out.write(userinfo.getName() + "," + userinfo.getEmail() + "," + userinfo.password + "," + userinfo.getFavourite_Premier_League_Team() + "," +
-				(int)userinfo.getBudget());
+				+ userinfo.getFilename() + "," + (int)userinfo.getBudget());
+<<<<<<< HEAD
+>>>>>>> ad566c850abb3af7ef2e8649a42fc9781dfcdc45
+=======
+>>>>>>> ad566c850abb3af7ef2e8649a42fc9781dfcdc45
 				out.newLine();
 				out.close();
 		}
@@ -88,99 +91,47 @@ import java.util.ArrayList;
 		{
 			BufferedWriter out=new BufferedWriter(new FileWriter(path("Players.txt"),true));
 			out.write(playerinfo.getName() + "," + playerinfo.getNationality() + "," + playerinfo.getClub()
-			+ "," + playerinfo.getPosition() + "," + playerinfo.getDate_of_Birth() + "," + playerinfo.getHeight() + " cm" + "," + playerinfo.getPrice()
-			 + "," + playerinfo.getAppearances() + "," + playerinfo.getGoals() + "," + playerinfo.getWins() + "," + playerinfo.getLosses()+ "," + playerinfo.getCleanSheets());
+			+ "," + playerinfo.getPosition() + "," + playerinfo.getDate_of_Birth() + "," + playerinfo.getHeight() + " cm" + "," + playerinfo.getPrice()+ "," + playerinfo.getPoints());
 			out.newLine();
 			out.close();
 		}
-		public int checkNOPinSquad(String fileName) throws IOException
+		public void ReadDG(String fileWeek) throws IOException
 		{
-			numberOfPlayersInFile=0;
-			File f1 = new File(fileName);
-			FileReader fr = new FileReader(f1);
-		    BufferedReader br = new BufferedReader(fr);
-		    String line;
-		    while((line = br.readLine())!= null)
-		    {
-		    	numberOfPlayersInFile++;
-		    }
-		    br.close();
-		    return numberOfPlayersInFile;
+			Team1.clear();
+			Team2.clear();
+			readFile(fileWeek);
+			if(fileWeek.equalsIgnoreCase("Week 1.txt"))
+			{
+				for(int i=0;i<array.size();i+=8)
+				{
+					if(array.get(i+2).equalsIgnoreCase("Liverpool") && (array.get(i+3).equalsIgnoreCase("Goalkeeper") || array.get(i+3).equalsIgnoreCase("Defender")))
+					{
+						Team1.add(array.get(i));
+					}
+					else if(array.get(i+2).equalsIgnoreCase("Manchester City") && (array.get(i+3).equalsIgnoreCase("Goalkeeper") || array.get(i+3).equalsIgnoreCase("Defender")))
+					{
+						Team2.add(array.get(i));
+					}
+				}
+			}
+			if(fileWeek.equalsIgnoreCase("Week 2.txt"))//lsa msh 3rfen el match
+			{
+				for(int i=0;i<array.size();i+=8)
+				{
+					if(array.get(i+2).equalsIgnoreCase("Chelsea") && (array.get(i+3).equalsIgnoreCase("Goalkeeper") || array.get(i+3).equalsIgnoreCase("Defender")))
+					{
+						Team1.add(array.get(i));
+					}
+					else if(array.get(i+2).equalsIgnoreCase("Aston Villa") && (array.get(i+3).equalsIgnoreCase("Goalkeeper") || array.get(i+3).equalsIgnoreCase("Defender")))
+					{
+						Team2.add(array.get(i));
+					}
+				}
+			}
 		}
-		public void checknumberOfPlayers(String fileName,String club) throws IOException
+		public void writeFileBudget(String fileName,String playerName,String newBudgetOfUser) throws IOException
 		{
-			numberOfPlayers=0;
-			File f1 = new File(fileName);
-			FileReader fr = new FileReader(f1);
-		    BufferedReader br = new BufferedReader(fr);
-		    String line;
-		    while((line = br.readLine())!= null)
-		    {
-		    	if (line.contains(club))
-		    	{
-		    		numberOfPlayers++;
-		    	}
-		    }
-		    br.close();
-		}
-		public void checkPosition(String fileName,String position) throws IOException
-		{
-			numberOfGoalkeepers=0;
-		    numberOfForwards=0;
-			numberOfMidfielders=0;
-			numberOfDefenders=0;
-		    numberOfPlayersInFile=0;
-			File f1 = new File(fileName);
-			FileReader fr = new FileReader(f1);
-		    BufferedReader br = new BufferedReader(fr);
-		    String line;
-		    if(position.equals("Goalkeeper"))
-		    {
-		    	while((line = br.readLine())!= null)
-			    {
-			    	if (line.contains(position))
-			    	{
-			    		numberOfGoalkeepers++;
-			    	}
-			    }
-			    br.close();
-		    }
-		    else if(position.equals("Forward"))
-		    {
-		    	while((line = br.readLine())!= null)
-			    {
-			    	if (line.contains(position))
-			    	{
-			    		numberOfForwards++;
-			    	}
-			    }
-			    br.close();
-		    }
-		    else if(position.equals("Midfielder"))
-		    {
-		    	while((line = br.readLine())!= null)
-			    {
-			    	if (line.contains(position))
-			    	{
-			    		numberOfMidfielders++;
-			    	}
-			    }
-			    br.close();
-		    }
-		    else if(position.equals("Defender"))
-		    {
-		    	while((line = br.readLine())!= null)
-			    {
-			    	if (line.contains(position))
-			    	{
-			    		numberOfDefenders++;
-			    	}
-			    }
-			    br.close();
-		    }
-		}
-		public void writeFile(String fileName,String playerName,double budgetOfUser,double priceOfPlayer,int inde) throws IOException
-		{
+			int inde=search("Users.txt",fileName);
 			String line=readLinebyLine("Players.txt",playerName);
 			String lineFromUserFile=null;
 			lineFromUserFile=readLinebyLine(fileName,playerName);
@@ -190,21 +141,33 @@ import java.util.ArrayList;
 				out.write(line);
 				out.newLine();
 				out.close();
-				double newBudget=budgetOfUser-priceOfPlayer;
-				String newBudgetOfUser=String.format("%f",newBudget);
 				String newLine=array.get(inde-4)+","+array.get(inde-3)+","+array.get(inde-2)+","+array.get(inde-1)+","+array.get(inde)+","+newBudgetOfUser;
-				replace(fileName,newLine);
+				replace("Users.txt",fileName,newLine);
 			}
 			else
 			{
 				System.out.println("You already have this player in your squad.");
 			}
 		}
+		public void readLinebyLine(String fileName) throws IOException
+		{
+			File file = new File(fileName);
+		    FileReader fr = new FileReader(file);
+		    BufferedReader br = new BufferedReader(fr);
+		    String line;
+		    lines.clear();
+		    while((line = br.readLine())!= null)
+		    {
+		        lines.add(line);
+		    }
+		    br.close();
+		}
 		public String readLinebyLine(String file,String name) throws IOException
 		{
 			File f1 = new File(file);
 			FileReader fr = new FileReader(f1);
-		    BufferedReader br = new BufferedReader(fr);
+			@SuppressWarnings("resource")
+			BufferedReader br = new BufferedReader(fr);
 		    String line;
 		    while((line = br.readLine())!= null)
 		    {
@@ -218,26 +181,12 @@ import java.util.ArrayList;
 		}
 		public int search(String file,String target) throws IOException
 		{
-			if(file.equals("Players.txt"))
+			readFile(file);
+			for(int i=0;i<array.size();i++)
 			{
-				readFile(file);
-				for(int i=0;i<array.size();i++)
+				if(array.get(i).equals(target))
 				{
-					if(array.get(i).equals(target))
-					{
-						return i;
-					}
-				}
-			}
-			else if(file.equals("Users.txt"))
-			{
-				readFile(file);
-				for(int i=0;i<array.size();i++)
-				{
-					if(array.get(i).equals(target))
-					{
-						return i;
-					}
+					return i;
 				}
 			}
 			return -1;
@@ -272,16 +221,16 @@ import java.util.ArrayList;
 			readFile("Users.txt");
 			return array.get(index+3);
 		}
-		public void  replace(String fileName,String newLine) throws IOException
+		public void  replace(String fileName,String check,String newLine) throws IOException
 	    {
-			File file = new File("Users.txt");
+			File file = new File(fileName);
 		    FileReader fr = new FileReader(file);
 		    BufferedReader br = new BufferedReader(fr);
 		    String line;
 		    lines.clear();
 		    while((line = br.readLine())!= null)
 		    {
-		    	if (line.contains(fileName))
+		    	if (line.contains(check))
 		    	{
 		    		line = line.replace(line, newLine);
 		    	}

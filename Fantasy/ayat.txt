@@ -1,0 +1,2 @@
+Adrian,Spain,Liverpool,Goalkeeper,03/01/1987,190.0 cm,5000000,48
+Benjamin Mendy,France,Manchester City,Defender,17/07/1994,185 cm,5000000,-1

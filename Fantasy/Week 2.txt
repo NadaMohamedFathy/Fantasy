@@ -1,0 +1,22 @@
+Arrizabalaga,Spain,Chelsea,Goalkeeper,03/10/1994,189 cm,4000000,18
+Thiago Silva,Brazil,Chelsea,Defender,22/09/1984,183 cm,1000000,9
+Azpilicueta,Spain,Chelsea,Defender,28/08/1989,178 cm,3000000,0
+Ben Chilwell,England,Chelsea,Defender,21/12/1996,178 cm,4000000,0
+Marcos Alonso,Spain,Chelsea,Defender,28/12/1990,188 cm,9000000,0
+Tammy Abraham,England,Chelsea,Forward,02/10/1997,190 cm,7000000,0
+Timo Werner,Germany,Chelsea,Forward,06/03/1996,180 cm,3000000,0
+Olivier Giroud,France,Chelsea,Forward,30/09/1986,192 cm,2000000,0
+Pulisic,United States,Chelsea,Midfielder,18/09/1998,172 cm,2000000,0
+HakemZiyech,Morocco,Chelsea,Midfielder,19/03/1993,180 cm,3000000,0
+Mason Mount,England,Chelsea,Midfielder,10/01/1999,178 cm,4000000,0
+Nyland,Norway,Aston Villa,Goalkeeper,10/09/1990,192 cm,4000000,0
+Nail Taylor,Wales,Aston Villa,Defender,07/02/1989,176 cm,2000000,0
+Engels,Belgium,Aston Villa,Defender,15/09/1994,193 cm,3000000,0
+Targett,England,Aston Villa,Defender,18/09/1995,183 cm,4000000,0
+Ahmed El Mohamady,Egypt,Aston Villa,Defender,09/09/1987,183cm,3000000,0
+Jack Grealish,England,Aston Villa,Midfielder,10/09/1995,175 cm,3000000,0
+Douglas Luiz,Brazil,Aston Villa,Midfielder,09/05/1998,175 cm,4000000,0
+Trezeguet,Egypt,Aston Villa,Midfielder,01/10/1994,180 cm,3000000,0
+Anwar El Ghazi,Netherlands,Aston Villa,Midfielder,03/05/1995,188 cm,2000000,0
+Davis,England,Aston Villa,Forward,13/02/1998,191 cm,3000000,0
+wesley,Brazil,Aston Villa,Forward,26/11/1996,191 cm,3000000,0

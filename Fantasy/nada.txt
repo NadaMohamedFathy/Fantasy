@@ -1,1 +1,2 @@
-
+Adrian,Spain,Liverpool,Goalkeeper,03/01/1987,190.0 cm,5000000,48
+Aymeric Laporte,France,Manchester City,Defender,27/05/1994,191 cm,3000000,-1

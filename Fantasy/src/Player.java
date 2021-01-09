@@ -5,8 +5,8 @@ public class Player {
 
 	Files player_file=new Files();
 	PlayerInfo playerinfo;
-	User user=new User();
 	Scanner scan= new Scanner(System.in);
+	Scanner scan1= new Scanner(System.in);
 	public Player() {}
 	public void addPlayer() throws IOException
 	{
@@ -20,11 +20,11 @@ public class Player {
 		String club = scan.nextLine();
 		System.out.println("Date_of_Birth : ");
 		String Date_of_Birth = scan.nextLine();
-		System.out.println("Height : ");
-		double Height = scan.nextDouble();
+		System.out.println("Height (cm) : ");
+		double Height = scan1.nextDouble();
 		System.out.println("Price : ");
-		double price = scan.nextDouble();
-		System.out.println("Appearances : ");
+		double price = scan1.nextDouble();
+		/*System.out.println("Appearances : ");
 		int Appearances = scan.nextInt();
 		System.out.println("Goals : ");
 		int Goals = scan.nextInt();
@@ -33,8 +33,9 @@ public class Player {
 		System.out.println("Losses : ");
 		int Losses = scan.nextInt();
 		System.out.println("CleanSheets : ");
-		int CleanSheets = scan.nextInt();
-		playerinfo=new PlayerInfo(name,nationality,position,club,Date_of_Birth,Height,price,Appearances,Goals,Wins,Losses,CleanSheets);
+		int CleanSheets = scan.nextInt();*/
+		//,Appearances,Goals,Wins,Losses,CleanSheets
+		playerinfo=new PlayerInfo(name,nationality,position,club,Date_of_Birth,Height,price,0);
 		player_file.writeFile(playerinfo);
 		System.out.println("You entered the player sucessfully" + '\n');
 	}
