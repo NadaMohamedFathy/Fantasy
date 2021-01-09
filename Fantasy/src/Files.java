@@ -74,16 +74,8 @@ import java.util.ArrayList;
 		public void writeFile(UserInfo userinfo) throws IOException
 		{
 				BufferedWriter out=new BufferedWriter(new FileWriter(path("Users.txt"),true));
-<<<<<<< HEAD
 				out.write(userinfo.getName() + "," + userinfo.getEmail() + "," + userinfo.password + "," + userinfo.getFavourite_Premier_League_Team() + "," + userinfo.getFilename() 
 				+ "," +(int)userinfo.getBudget());
-=======
-				out.write(userinfo.getName() + "," + userinfo.getEmail() + "," + userinfo.password + "," + userinfo.getFavourite_Premier_League_Team() + "," +
-				+ userinfo.getFilename() + "," + (int)userinfo.getBudget());
-<<<<<<< HEAD
->>>>>>> ad566c850abb3af7ef2e8649a42fc9781dfcdc45
-=======
->>>>>>> ad566c850abb3af7ef2e8649a42fc9781dfcdc45
 				out.newLine();
 				out.close();
 		}
